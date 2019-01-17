@@ -1,6 +1,6 @@
 ﻿--[[
 Name: Babble-Boss-2.2
-Revision: 20004
+Revision: 20005
 Author(s): ckknight (ckknight@gmail.com)
 Website: http://ckknight.wowinterface.com/
 Documentation: http://wiki.wowace.com/index.php/Babble-Boss-2.2
@@ -10,7 +10,7 @@ Dependencies: AceLibrary, AceLocale-2.2
 ]]
 
 local MAJOR_VERSION = "Babble-Boss-2.2"
-local MINOR_VERSION = 20004
+local MINOR_VERSION = 20005
 
 if not AceLibrary then error(MAJOR_VERSION .. " requires AceLibrary") end
 
@@ -364,6 +364,8 @@ BabbleBoss:RegisterTranslations("enUS", function()
 		["Rethilgore"] = true;
 		["Atiesh"] = true;
 		["Stratholme Courier"] = true;
+		["Ancient Core Hound"] = true;
+		["Gurubashi Berserker"] = true;
                 ["Elder Mottled Boar"] = true,	
                 ["Stoneskin Gargoyle"] = true,
 }
@@ -704,9 +706,11 @@ BabbleBoss:RegisterTranslations("ruRU", function()
 		["Scorn"] = "Насмешник";
 		["Rethilgore"] = "Ретилгор";
 		["Atiesh"] = "Атиеш";
-		["Stratholme Courier"] = "Стратхольмский курьер";
-                ["Elder Mottled Boar"] = "Elder Mottled Boar", -- need translation
-                ["Stoneskin Gargoyle"] = "Stoneskin Gargoyle", -- need translation
+		["Stratholme Courier"] = "Стратхольмский курьер",
+		["Ancient Core Hound"] = "Древняя гончая Недр",
+		["Gurubashi Berserker"] = "Берсерк из племени Гурубаши",
+                ["Elder Mottled Boar"] = "Старый крапчатый вепрь", 
+                ["Stoneskin Gargoyle"] = "Каменная горгулья", 
 	}
 end)
 
@@ -929,9 +933,11 @@ BabbleBoss:RegisterTranslations("deDE", function()
 		["Razorclaw the Butcher"] = "Rasiermesserklaue der Metzger",
 		["Wolf Master Nandos"] = "Wolfmeister Nados",
 		["Rend Blackhand"] = "Rend Blackhand",
-
+		["Ancient Core Hound"] = "Ancient Core Hound",
+		["Gurubashi Berserker"] = "Gurubashi Berserker",
                 ["Stoneskin Gargoyle"] = "Steinhautgargoyle",
                 ["Elder Mottled Boar"] = "Alter scheckiger Eber",
+                ["Stratholme Courier"] = "Stratholme Courier",
 	}
 end)
 
@@ -1144,6 +1150,11 @@ BabbleBoss:RegisterTranslations("frFR", function()
 		["Wolf Master Nandos"] = "Ma\195\174tre-loup Nandos",
 		["Kurinnaxx"] = "Kurinnaxx",
 		["Stoneskin Gargoyle"] = "Stoneskin Gargoyle", -- need translation
+                ["Stratholme Courier"] = "Stratholme Courier",
+		["Ancient Core Hound"] = "Ancient Core Hound",
+		["Gurubashi Berserker"] = "Ancient Core Hound",
+                ["Elder Mottled Boar"] = "Ancient Core Hound", 
+               
 	}
 end)
 
@@ -1359,6 +1370,10 @@ BabbleBoss:RegisterTranslations("zhCN", function()
 		["Rend Blackhand"] = "雷德·黑手", 
 		["Kurinnaxx"] = "库林纳克斯",
                 ["Stoneskin Gargoyle"] = "Stoneskin Gargoyle", -- need translation
+                ["Stratholme Courier"] = "Stratholme Courier",
+		["Ancient Core Hound"] = "Ancient Core Hound",
+		["Gurubashi Berserker"] = "Ancient Core Hound",
+                ["Elder Mottled Boar"] = "Ancient Core Hound", 
 	}
 end)
 
@@ -1574,12 +1589,15 @@ BabbleBoss:RegisterTranslations("zhTW", function()
 		["Kurinnaxx"] = "庫林納克斯",
                 
                 ["Stoneskin Gargoyle"] = "Stoneskin Gargoyle", -- need translation
+                ["Stratholme Courier"] = "Stratholme Courier",
+		["Ancient Core Hound"] = "Ancient Core Hound",
+		["Gurubashi Berserker"] = "Ancient Core Hound",
+                ["Elder Mottled Boar"] = "Ancient Core Hound", 
 	}
 end)
 
 BabbleBoss:RegisterTranslations("koKR", function()
 	return {
-		["Stoneskin Gargoyle"] = "Stoneskin Gargoyle", -- need translation
 		["Avalanchion"] = "아발란치온",
 		["The Windreaver"] = "칼날바람",
 		["Baron Charr"] = "남작 차르",
@@ -1789,6 +1807,12 @@ BabbleBoss:RegisterTranslations("koKR", function()
 		["Wolf Master Nandos"] = "늑대왕 난도스",
 		["Rend Blackhand"] = "대족장 렌드 블랙핸드",
 		["Kurinnaxx"] = "쿠린낙스",
+
+                ["Stoneskin Gargoyle"] = "Stoneskin Gargoyle", -- need translation
+                ["Stratholme Courier"] = "Stratholme Courier",
+		["Ancient Core Hound"] = "Ancient Core Hound",
+		["Gurubashi Berserker"] = "Ancient Core Hound",
+                ["Elder Mottled Boar"] = "Ancient Core Hound", 
 	}
 end)
 
