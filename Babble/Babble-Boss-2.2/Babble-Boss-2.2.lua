@@ -368,6 +368,7 @@ BabbleBoss:RegisterTranslations("enUS", function()
 		["Gurubashi Berserker"] = true;
                 ["Elder Mottled Boar"] = true,	
                 ["Stoneskin Gargoyle"] = true,
+		["Master Craftsman Omarion"] = true,
 }
 end)
 
