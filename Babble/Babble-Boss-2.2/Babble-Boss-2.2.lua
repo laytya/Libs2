@@ -1,6 +1,6 @@
 ﻿--[[
 Name: Babble-Boss-2.2
-Revision: 20005
+Revision: 20006
 Author(s): ckknight (ckknight@gmail.com)
 Website: http://ckknight.wowinterface.com/
 Documentation: http://wiki.wowace.com/index.php/Babble-Boss-2.2
@@ -453,6 +453,7 @@ BabbleBoss:RegisterTranslations("ruRU", function()
 		["Eye of C'Thun"] = "Око К'Туна",
 		["C'Thun"] = "К'Тун",
 		["Anubisath Defender"] = "Анубисат-защитник",
+		["Anubisath Warder"] = "Анубисат-хранитель",
 		["Fankriss the Unyielding"] = "Фанкрисс Неприклонный",
 		["Princess Huhuran"] = "Принцесса Хухуран",
 		["Ouro"] = "Оуро",
@@ -476,7 +477,7 @@ BabbleBoss:RegisterTranslations("ruRU", function()
 		["Captain Kromcrush"] = "Капитан Давигром",
 		["Celebras the Cursed"] = "Келебрас Проклятый",
 		["Crystal Fang"] = "Хрустальный Клык",
-                ["Darkmaster Gandling"] = "Темный магистр Гандлинг",
+		["Darkmaster Gandling"] = "Темный магистр Гандлинг",
 		["Doctor Theolen Krastinov"] = "Доктор Теолен Крастинов",
 		["Doom'rel"] = "Рок'рел",
 		["Dope'rel"] = "Праздн'рел",
@@ -585,6 +586,7 @@ BabbleBoss:RegisterTranslations("ruRU", function()
 		["Kurinnaxx"] = "Куриннакс",
 		
 		["Maur Grimtotem"] = "Маур Зловещий Тотем",
+		["Oggleflint"] = "Огглфлинт",
 		["Taragaman the Hungerer"] = "Тарагаман Ненасытный",
 		["Jergosh the Invoker"] = "Жергош Призыватель Духов",
 		["Bazzalan"] = "Баззалан",
@@ -706,11 +708,12 @@ BabbleBoss:RegisterTranslations("ruRU", function()
 		["Scorn"] = "Насмешник";
 		["Rethilgore"] = "Ретилгор";
 		["Atiesh"] = "Атиеш";
-		["Stratholme Courier"] = "Стратхольмский курьер",
-		["Ancient Core Hound"] = "Древняя гончая Недр",
-		["Gurubashi Berserker"] = "Берсерк из племени Гурубаши",
-                ["Elder Mottled Boar"] = "Старый крапчатый вепрь", 
-                ["Stoneskin Gargoyle"] = "Каменная горгулья", 
+		["Stratholme Courier"] = "Стратхольмский курьер";
+		["Ancient Core Hound"] = "Древняя гончая Недр";
+		["Gurubashi Berserker"] = "Берсерк из племени Гурубаши";
+		["Elder Mottled Boar"] = "Старый крапчатый вепрь",
+		["Stoneskin Gargoyle"] = "Каменная горгулья",
+		["Master Craftsman Omarion"] = "Мастер-ремесленник Омарион",
 	}
 end)
 
