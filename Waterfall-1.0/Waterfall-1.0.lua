@@ -347,7 +347,7 @@ end
 --end of borrowing
 
 local function parseList(list)
-	local token, rest = string.match(list,"([^%s]+)%s+(.+)")
+	local _,_, token, rest = string.find(list,"([^%s]+)%s+(.+)")
 	if not rest then
 		return (tonumber(list) or list)
 	else
@@ -429,7 +429,7 @@ local function checkNegatable(attr,handler,param)
 	if type(attr) == "function" then
 		ret = attr(param)
 	elseif type(attr) == "string" and handler then
-		local neg = string.match(attr,"^~(.+)$")
+		local _,_, neg = string.find(attr,"^~(.+)$")
 		if neg then
 			attr = neg
 		end
@@ -935,7 +935,7 @@ local function addDisabled(t,disabled,handler,param)
 				tinsert(t,param)
 			end
 		elseif type(disabled) == "string" then
-			local neg = string.match(disabled,"^~(.+)$")
+			local _,_,neg = string.find(disabled,"^~(.+)$")
 			if neg then
 				disabled = neg
 			end
