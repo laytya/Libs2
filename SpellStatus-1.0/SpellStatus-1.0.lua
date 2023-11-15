@@ -1,6 +1,6 @@
 --[[
 Name: SpellStatus-1.0
-Revision: $Rev: 14589 $
+Revision: $Rev: 14590 $
 Author(s): Nightdew (denzsolnightdew@gmail.com)
 Website: http://www.wowace.com/index.php/SpellStatus-1.0
 Documentation: http://www.wowace.com/index.php/SpellStatus-1.0
