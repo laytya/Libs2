@@ -1,6 +1,6 @@
 ﻿--[[
 Name: Waterfall-1.0
-Revision: $Revision: 78661 $
+Revision: $Revision: 78700 $
 Author(s): Nargiddley (nargiddley@gmail.com)
 Inspired By: Dewdrop by ckknight
 Website: http://www.wowace.com/wiki/Waterfall-1.0
@@ -12,7 +12,7 @@ Dependencies: AceOO-2.0
 ]]
 
 local MAJOR_VERSION = "Waterfall-1.0"
-local MINOR_VERSION = "$Revision: 78662 $"
+local MINOR_VERSION = "$Revision: 78700 $"
 
 local CONTROL_LIMIT = 250
 local _
@@ -53,47 +53,6 @@ elseif GetLocale() == "ruRU" then
 end
 
 local DEFAULT_CONTROL_WIDTH = 180
---[[
-local print = Sea.io.print
-local function printTable(table,rowname,level)
-	if ( level == nil ) then level = 1; end
-	
-	if ( type(rowname) == "nil" ) then rowname = "ROOT"; 
-	elseif ( type(rowname) == "string" ) then 
-		rowname = "\""..rowname.."\"";
-	elseif ( type(rowname) ~= "number" ) then
-		rowname = "*"..type(rowname).."*";
-	end
-
-	local msg = "";
-	
-	
-	
-	if ( table == nil ) then 
-		Sea.io.print(msg,"[",rowname,"] := nil "); return 
-	end
-	if ( type(table) == "table" and level > 0 ) then
-		Sea.io.print (msg,rowname," { ");
-		for k,v in table do
-			if v == nil then Sea.io.print(msg,"[",rowname,"] := nil "); end
-			printTable(v,k,level-1);
-		end
-		Sea.io.print(msg,"}");
-	elseif (type(table) == "function" ) then 
-		Sea.io.print(msg,"[",rowname,"] => {{FunctionPtr*}}");
-	elseif (type(table) == "userdata" ) then 
-		Sea.io.print(msg,"[",rowname,"] => {{UserData}}");
-	elseif (type(table) == "boolean" ) then 
-		local value = "true";
-		if ( not table ) then
-			value = "false";
-		end
-		Sea.io.print(msg,"[",rowname,"] => ",value);
-	else	
-		Sea.io.print(msg,"[",rowname,"] => ",table);
-	end
-end
-]]
 
 --[[
 	Passing an AceOO class will get an object of that class from the pool
